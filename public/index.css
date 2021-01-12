@@ -5,19 +5,21 @@
 }
 
 img {
-  height: 50px;
-  width: 50px;
+  height: 35px;
+  width: 35px;
+ 
+  
 }
-main{
+.main{
   background:
        url("./img/walpaper.jpg")
        no-repeat
        fixed;
   background-size: 100%93%;
-  height: 1020px;  
+  height: 1020px;
  
 }
-nav {
+.nav {
   overflow: hidden;
   
   display: flex;
@@ -35,6 +37,274 @@ nav {
 .icon{
   margin: 5px 20px;
   color: #ffffff;
+  border: 1px solid greenyellow;
+  border-radius: 6px;
+  padding: 5px;
+  
+  
+}
+
+
+table td {
+  outline: 1px solid black;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  font-size: 5em;
+  background-color: #eee;
+  background-repeat: no-repeat;
+}
+
+table td:hover {
+  cursor: pointer;
+  background-color: #ccc;
+}
+
+.dimension {
+  background-color: white;
+}
+
+.aplyButton {
+  background-color: #e7e7e7;
+  left: 60px;
+  position: absolute;
+}
+
+.memGameIcon {
+  position: absolute;
+  left: 200px;
+  top: 50px;
+}
+
+.memGamTxt {
+  position: absolute;
+  left: 180px;
+  top: 100px;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-style: inherit;
+  font-weight: normal;
+}
+
+
+
+
+.hangmanIconBar {
+  width: 40px;
+  height: 40px;
+  float: left;
+  border-radius: 50px;
+  border: none;
+}
+
+
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  color: #555;
+  margin: 10px 0;
+  overflow-wrap: break-word;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.checkCharTextBox {
+  width: 102px;
+  height: 31px;
+}
+
+
+.border {
+  height: 21px;
+  background-color: #4c75a7;
+}
+
+button {
+  cursor: pointer;
+}
+
+.sidebar a {
+  padding: 50px;
+  color: #818181;
+  display: block;
+}
+
+.memory img {
+  width: 60px;
+}
+
+.memory .removed {
+  visibility: hidden;
+}
+
+.window {
+  border: 2px solid silver;
+  border-radius: 5px;
+  height: 297px;
+  width: 255px;
+  margin-left: 150px;
+  margin-top: 40px;
+  position: fixed;
+  left: 500px;
+  top: 150px;
+  background-image: url(https://iphonewalls.net/wp-content/uploads/2015/03/Big%20Water%20Bubbles%20iPhone%206%20Wallpaper-320x480.jpg);
+}
+
+.text {
+  bottom: -4px;
+  position: absolute;
+  float: left;
+  width: 255px;
+}
+
+textarea {
+  width: 249px;
+  height: 50px;
+}
+
+.navWindow {
+  height: 38px;
+  border: 2px solid #4c75a7;
+  background-color: #4c75a7;
+}
+
+.buttonX {
+  float: right;
+  width: 55px;
+  height: 37px;
+  background-color: greenyellow;
+  border: none;
+  border-radius: 25px;
+}
+
+
+
+
+.sidebar {
+  height: 100%;
+  float: left;
+  width: 100px;
+  padding-top: 16px;
+  padding-left: 5px;
+  padding-right: 10px;
+  position: fixed;
+  top: 0;
+  background-color: #73ac7859;
+}
+
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  color: #555;
+  margin: 10px 0;
+  overflow-wrap: break-word;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+a {
+  text-decoration: none;
+}
+
+.game {
+  width: 585px;
+  height: 520px;
+  line-height: 0;
+}
+
+.addUserName {
+  background-color: #be5b6e !important;
+  border: none;
+  color: white;
+  padding: 11px 4px !important;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  border-radius: 16px;
+  top: 320px;
+  right: 80px;
+  position: absolute;
+}
+
+
+
+
+button {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.window {
+  border: 2px solid greenyellow;
+  border-radius: 5px;
+  height: 385px;
+  width: 255px;
+  margin-left: 150px;
+  margin-top: 40px;
+  position: fixed;
+}
+
+
+
+
+.text {
+  bottom: -4px;
+  position: absolute;
+  float: left;
+  width: 255px;
+}
+
+
+
+.button {
+  background-color: #c2428d;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  float: right;
+}
+
+.representWindow {
+  color: white;
+  width: 45px;
+  margin-top: 10px;
+  float: left;
+}
+
+.hManAreaBorder {
+  height: 21px;
+  background-color: #4c75a7;
 }
 
 

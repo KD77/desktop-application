@@ -7,35 +7,60 @@
     <title>Document</title>
   </head>
   <body>
-    <nav>
+    <div class="nav">
 
     
     <div class="icon">
       <img src="./img/Geometric lion2.png" alt="memoryIcon" class="memoryIcon" id="memIcon">
-      <h5></h5>Memory Game</h5>
+      <h5>Memory Game</h5>
     </div>
     <div class="icon">
       <img src="./img/Geometric lion3.png" alt="chatAppIcon" class="chatAppIcon" id="chatIcon">
       <h5>Chat App</h5>
     </div>
-    <div class="icon">
-      <img src="./img/hang.png" alt="hangmanIcon" class="hangmanIcon" id="hangIcon">
+   <div class="hangManIcon icon" id="hngmanGame">
+      <img src="./img/hang.png" alt="">
       <h5>Hangman</h5>
     </div>
-      
-   </nav>
-   <main>
-   <div class="windowContainer">
-     <template>
-       <div class="window">
-         <img src="./img/Geometric lion.png" alt="">
-       </div>
-     </template>
-   </div>
+    
 
-   </main>
+      
+  </div>
+   <div class="main">
+    
+
+    <div class="windowContainer">
+      <template>
+        <div class="window">
+          <div class="navWindow">
+            <button class="buttonX">X</button>
+            <img
+              class="hangmanIconBar"
+              src="./img/hang.png"
+            />
+          </div>
+        </div>
+      </template>
+    </div>
+  
+
+    <div class="hangManContainer">
+      <template>
+        <div class="hMan">
+          <div class="hManArea"></div>
+
+          <div class="hManAreaBorder"></div>
+          <div class="text">
+            <textarea></textarea>
+          </div>
+        </div>
+      </template>
+    </div>
+   
+
+   </div>
     
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <script type="module" src="/_dist_/"></script>
+    <script type="module" src="/_dist_/index.js"></script>
   </body>
 </html>
