@@ -1,27 +1,21 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  background-color: #2c3e50;
 }
 
 img {
   height: 35px;
   width: 35px;
- 
-  
+  margin: 2px 5px;
 }
-.main{
-  background:
-       url("./img/walpaper.jpg")
-       no-repeat
-       fixed;
+.main {
+  background: url("./img/walpaper.jpg") no-repeat fixed;
   background-size: 100%93%;
   height: 1020px;
- 
 }
 .nav {
   overflow: hidden;
-  
+
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -34,16 +28,13 @@ img {
   background-color: #2c3e50;
   text-align: center;
 }
-.icon{
+.icon {
   margin: 5px 20px;
   color: #ffffff;
   border: 1px solid greenyellow;
   border-radius: 6px;
   padding: 5px;
-  
-  
 }
-
 
 table td {
   outline: 1px solid black;
@@ -86,9 +77,6 @@ table td:hover {
   font-weight: normal;
 }
 
-
-
-
 .hangmanIconBar {
   width: 40px;
   height: 40px;
@@ -96,7 +84,6 @@ table td:hover {
   border-radius: 50px;
   border: none;
 }
-
 
 .container {
   border: 2px solid #dedede;
@@ -118,12 +105,10 @@ a {
   text-decoration: none;
 }
 
-
 .checkCharTextBox {
   width: 102px;
   height: 31px;
 }
-
 
 .border {
   height: 21px;
@@ -147,7 +132,7 @@ button {
 .memory .removed {
   visibility: hidden;
 }
-
+/*duplicate*/
 .window {
   border: 2px solid silver;
   border-radius: 5px;
@@ -158,21 +143,20 @@ button {
   position: fixed;
   left: 500px;
   top: 150px;
-  background-image: url(https://iphonewalls.net/wp-content/uploads/2015/03/Big%20Water%20Bubbles%20iPhone%206%20Wallpaper-320x480.jpg);
 }
 
 .text {
   bottom: -4px;
   position: absolute;
   float: left;
-  width: 255px;
+  width: 349px;
 }
 
 textarea {
-  width: 249px;
+  width: 100%;
   height: 50px;
 }
-
+/*remove*/
 .navWindow {
   height: 38px;
   border: 2px solid #4c75a7;
@@ -188,30 +172,6 @@ textarea {
   border-radius: 25px;
 }
 
-
-
-
-.sidebar {
-  height: 100%;
-  float: left;
-  width: 100px;
-  padding-top: 16px;
-  padding-left: 5px;
-  padding-right: 10px;
-  position: fixed;
-  top: 0;
-  background-color: #73ac7859;
-}
-
-.container {
-  border: 2px solid #dedede;
-  background-color: #f1f1f1;
-  border-radius: 5px;
-  padding: 10px;
-  color: #555;
-  margin: 10px 0;
-  overflow-wrap: break-word;
-}
 
 .container::after {
   content: "";
@@ -244,42 +204,9 @@ a {
   position: absolute;
 }
 
-
-
-
 button {
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-.window {
-  border: 2px solid greenyellow;
-  border-radius: 5px;
-  height: 385px;
-  width: 255px;
-  margin-left: 150px;
-  margin-top: 40px;
-  position: fixed;
-}
-
-
-
-
-.text {
-  bottom: -4px;
-  position: absolute;
-  float: left;
-  width: 255px;
-}
-
-
 
 .button {
   background-color: #c2428d;
@@ -292,7 +219,6 @@ button {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  float: right;
 }
 
 .representWindow {
@@ -306,9 +232,40 @@ button {
   height: 21px;
   background-color: #4c75a7;
 }
+.icons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: nav-wrapper;
+  border-bottom: 1px solid #c1c1c1;
+  background-color: #d2d2d2;
+  border-radius: 5px 5px 0 0;
+}
 
+#dot-1 {
+  background-color: #fc6058;
+}
 
+#dot-2 {
+  background-color: #fec02f;
+}
 
+#dot-3 {
+  background-color: #2aca3e;
+}
+.browser-dot {
+  background-color: black;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 5px;
 
-
-
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+}

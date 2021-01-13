@@ -9,4 +9,3 @@ hangman.addEventListener('click', function () {
   hangmanGameID++
   myWindow.div.appendChild(myChat.div)
 })
-
