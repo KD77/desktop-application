@@ -3,11 +3,27 @@
   margin: 0;
 }
 
+table td {
+  outline: 1px solid black;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  font-size: 5em;
+  background-color: #eee;
+  background-repeat: no-repeat;
+}
+
+table td:hover {
+  cursor: pointer;
+  background-color: #ccc;
+}
+
 img {
   height: 35px;
   width: 35px;
   margin: 2px 5px;
 }
+
 .main {
   background: url("./img/walpaper.jpg") no-repeat fixed;
   background-size: 100%93%;
@@ -36,20 +52,14 @@ img {
   padding: 5px;
 }
 
-table td {
-  outline: 1px solid black;
-  width: 300px;
-  height: 200px;
-  text-align: center;
-  font-size: 5em;
-  background-color: #eee;
-  background-repeat: no-repeat;
+.representWindowMemory {
+  color:#000;
+  
+  margin-top: 5px;
+  
+  
 }
 
-table td:hover {
-  cursor: pointer;
-  background-color: #ccc;
-}
 
 .dimension {
   background-color: white;
@@ -105,11 +115,6 @@ a {
   text-decoration: none;
 }
 
-.checkCharTextBox {
-  width: 102px;
-  height: 31px;
-}
-
 .border {
   height: 21px;
   background-color: #4c75a7;
@@ -136,20 +141,22 @@ button {
 .window {
   border: 2px solid silver;
   border-radius: 5px;
-  height: 297px;
-  width: 255px;
+  height: 397px;
+  width: 285px;
   margin-left: 150px;
   margin-top: 40px;
   position: fixed;
   left: 500px;
   top: 150px;
+  background-color: #ffffff;
+  color: #000;
 }
 
 .text {
   bottom: -4px;
   position: absolute;
   float: left;
-  width: 349px;
+  width: 284px;
 }
 
 textarea {
@@ -222,15 +229,21 @@ button {
 }
 
 .representWindow {
-  color: white;
-  width: 45px;
+  color:#000;
+  
   margin-top: 10px;
-  float: left;
+  text-align: center;
 }
 
 .hManAreaBorder {
   height: 21px;
-  background-color: #4c75a7;
+ background-color: #ffffff;
+}
+#msg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 .icons-wrapper {
   display: flex;
@@ -268,4 +281,7 @@ button {
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+}
+p{
+  color: #ffffff;
 }

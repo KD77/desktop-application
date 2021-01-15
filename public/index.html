@@ -10,12 +10,12 @@
     <div class="nav">
 
     
-    <div class="icon">
-      <img src="./img/Geometric lion2.png" alt="memoryIcon" class="memoryIcon" id="memIcon">
+    <div class="memoryIcon icon" id="memIcon">
+      <img src="./img/Geometric lion2.png" alt="memoryIcon" >
       <h5>Memory Game</h5>
     </div>
-    <div class="icon">
-      <img src="./img/Geometric lion3.png" alt="chatAppIcon" class="chatAppIcon" id="chatIcon">
+    <div class="chatAppIcon icon" id="chatIcon">
+      <img src="./img/Geometric lion3.png" alt="chatAppIcon" >
       <h5>Chat App</h5>
     </div>
    <div class="hangManIcon icon" id="hngmanGame">
@@ -38,6 +38,7 @@
               <div id="dot-2" class="browser-dot"></div>
               <div id="dot-3" class="browser-dot"></div>
             </div>
+          
             <div class="nav-left ">
               <img src="./img/hang.png" width="48" height="48" >
              </div>
@@ -49,15 +50,37 @@
     <div class="hangManContainer">
       <template>
         <div class="hMan">
-          <div class="hManArea"></div>
-
-          <div class="hManAreaBorder"></div>
+          <div class="hManArea"><h5 id="msg">Press Enter in the Textbox to Start</h5></div>
+           
+          <div class="hManAreaBorder"></div> 
+          
           <div class="text">
-            <textarea></textarea>
+            <textarea id="textArea"></textarea>
           </div>
         </div>
       </template>
+
     </div>
+    <div class="chatContainer">
+      <template>
+        <div class="chat">
+          
+        <p id="x"></p>
+      
+         <h1>hello chat</h1>
+        </div>
+      </template>
+    </div>
+
+    
+    <div id="memoryContainer">
+      <template>
+        <div class="memory">
+                <img src="img/mem/0.png" alt="memoryImg"/>		
+        </div>
+    </template>
+    </div>
+  
    
 
    </div>
