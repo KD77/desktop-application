@@ -9,7 +9,7 @@ const memory = document.querySelector('#memIcon')
 const apply =document.querySelector('#apply')
 const setting= document.getElementById('setting')
 document.getElementById('settingContainer').style.visibility='hidden'
-const close =document.getElementById('dot-1').style.display='inline-block'
+const close =document.querySelector('.close')
 
 
 let hangmanGameID = 1
@@ -54,5 +54,7 @@ apply.addEventListener('click', function(){
 setting.addEventListener('click', function(){
   document.getElementById('settingContainer').style.visibility='visible'
 })
-
+close.addEventListener('click',function(){
+  document.getElementById('dot-1').style.display='none'
+})
 

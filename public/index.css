@@ -128,8 +128,12 @@ img {
 
 a {
   text-decoration: none;
+  
 }
-
+.close{
+  color: #000;
+  text-align: center;
+}
 .border {
   height: 21px;
   background-color: #4c75a7;
