@@ -276,9 +276,13 @@ button {
   background-color: #d2d2d2;
   border-radius: 5px 5px 0 0;
 }
-
+ #close {
+  text-align: center;
+}
 #dot-1 {
+  display: inline;
   background-color: #fc6058;
+  
 }
 
 #dot-2 {
@@ -301,6 +305,37 @@ button {
 }
 p{
   color: #ffffff;
+}
+#settingContainer {
+  border: 2px solid silver;
+  border-radius: 5px;
+  height: 397px;
+  width: 285px;
+  color: #000;
+  background-color: #ffffff;
+  
+}
+#settingTittle{
+  text-align: center;
+  margin-right: 90px;
+}
+#options{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin: 20px;
+}
+#apply{
+  padding: 14px 20px;
+  color: #000;
+  text-align:center;
+  text-decoration: none;
+  border: 2px solid #000;
+  margin: 20px; 
+  background-color: #fff;
+
 }
 
 /*.....*/

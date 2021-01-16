@@ -7,6 +7,8 @@ const hangman = document.querySelector('#hngmanGame')
 const chat = document.querySelector('#chatIcon')
 const memory = document.querySelector('#memIcon')
 
+
+
 let hangmanGameID = 1
 hangman.addEventListener('click', function () {
   const myWindow = new DragAndDrop('.windowContainer')
@@ -28,3 +30,4 @@ memory.addEventListener('click', function () {
   myWindow.div.appendChild(myMemory.div)
   memoryWindID++
 })
+
