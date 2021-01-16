@@ -3,9 +3,10 @@ import HangMan from './hangMan'
 import Chat from './Chat'
 import MemoryGame from './Memory'
 
-const hangman = document.getElementById('hngmanGame')
-const chat = document.getElementById('chatIcon')
-const memory = document.getElementById('memIcon')
+const hangman = document.querySelector('#hngmanGame')
+const chat = document.querySelector('#chatIcon')
+const memory = document.querySelector('#memIcon')
+
 let hangmanGameID = 1
 hangman.addEventListener('click', function () {
   const myWindow = new DragAndDrop('.windowContainer')

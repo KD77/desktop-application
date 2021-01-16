@@ -1,8 +1,13 @@
 * {
   box-sizing: border-box;
   margin: 0;
+ 
 }
-
+body{
+  background: url("./img/walpaper.jpg") no-repeat fixed;
+  background-size: 100%93%;
+  
+}
 table td {
   outline: 1px solid black;
   width: 300px;
@@ -21,14 +26,24 @@ table td:hover {
 img {
   height: 35px;
   width: 35px;
-  margin: 2px 5px;
+  margin: 5px 2px;
+}
+#img{
+  height: 65px;
+  width: 65px;
+  margin: 5px 2px;
+}
+#imgSetting {
+  height: 70px;
+  width: 70px;
+  margin: 40px;
 }
 
 .main {
-  background: url("./img/walpaper.jpg") no-repeat fixed;
-  background-size: 100%93%;
+
   height: 1020px;
 }
+
 .nav {
   overflow: hidden;
 
@@ -188,6 +203,7 @@ textarea {
 
 a {
   text-decoration: none;
+  color: #ffffff;
 }
 
 .game {
@@ -245,6 +261,7 @@ button {
   left: 50%;
   transform: translate(-50%,-50%);
 }
+
 .icons-wrapper {
   display: flex;
   justify-content: space-between;
@@ -285,3 +302,5 @@ button {
 p{
   color: #ffffff;
 }
+
+/*.....*/

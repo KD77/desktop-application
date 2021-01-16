@@ -36,7 +36,7 @@ export default class HangMan {
     this.showMessageDiv = this.div.childNodes[1]
 
     this.answer = this.div.childNodes[5]
-
+    // tittle and window ID
     const divRepresentWindow = document.createElement('div')
     divRepresentWindow.textContent = 'HangMan' + id
     divRepresentWindow.className = 'representWindow'
