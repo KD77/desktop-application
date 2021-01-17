@@ -168,13 +168,13 @@ button {
 .text {
   bottom: -4px;
   position: absolute;
-  float: left;
-  width: 284px;
+  
+  width: 384px;
 }
 
 textarea {
-
-  height: 50px;
+width: 280px;
+  height: 40px;
 }
 /*remove*/
 .navWindow {
@@ -365,6 +365,11 @@ p{
 .name{
   height: 22px;
   
+}
+.messages {
+  height: 260px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /*.....*/

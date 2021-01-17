@@ -9,7 +9,7 @@ class MemoryGame {
     this.container.appendChild(this.div)
     // tittle and window ID
     const divRepresentWindow = document.createElement('div')
-    divRepresentWindow.textContent = 'MemoryGame' + id
+    divRepresentWindow.textContent = 'MemoryGame'+' ' + id
     divRepresentWindow.className = 'representWindowMemory'
     myWindow.div.firstElementChild.appendChild(divRepresentWindow)
   }

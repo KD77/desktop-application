@@ -2,11 +2,6 @@ class Chat {
   constructor (container, myWindow, id) {
     // declare & initialize variables
     this.container = document.querySelector(container)
-    this.hngMan = document.querySelectorAll('.chatContainer template')[0].content.firstElementChild
-    this.div = document.importNode(this.hngMan, true)
-    this.container.appendChild(this.div)
-
-    this.container = document.querySelector(container)
     this.chatDiv = document.querySelectorAll('.chatContainer template')[0].content.firstElementChild
     this.div = document.importNode(this.chatDiv, true)
     this.container.appendChild(this.div)
@@ -20,7 +15,7 @@ class Chat {
     this.textAreaDiv = this.div.childNodes[5]
 
     const divRepresentWindow = document.createElement('div')
-    divRepresentWindow.textContent = 'Chat'
+    divRepresentWindow.textContent = 'Chat'+' '+ id
     divRepresentWindow.className = 'representWindow'
     myWindow.div.firstElementChild.appendChild(divRepresentWindow)
 

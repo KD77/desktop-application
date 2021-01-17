@@ -38,7 +38,7 @@ export default class HangMan {
     this.answer = this.div.childNodes[5]
     // tittle and window ID
     const divRepresentWindow = document.createElement('div')
-    divRepresentWindow.textContent = 'HangMan' + id
+    divRepresentWindow.textContent = 'HangMan'+' ' + id
     divRepresentWindow.className = 'representWindow'
     divRepresentWindow.style.textAlign= 'center'
     myWindow.div.firstElementChild.appendChild(divRepresentWindow)
