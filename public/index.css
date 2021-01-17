@@ -4,6 +4,8 @@
  
 }
 body{
+  height: 100%;
+  width: 100%;
   background: url("./img/walpaper.jpg") no-repeat fixed;
   background-size: 100%93%;
   
@@ -33,11 +35,7 @@ img {
   width: 65px;
   margin: 5px 2px;
 }
-#imgSetting {
-  height: 70px;
-  width: 70px;
-  margin: 40px;
-}
+
 
 .main {
 
@@ -130,7 +128,7 @@ a {
   text-decoration: none;
   
 }
-.close{
+#close{
   color: #000;
   text-align: center;
 }
@@ -311,17 +309,19 @@ p{
   color: #ffffff;
 }
 #settingContainer {
+ 
+display: block;
   border: 2px solid silver;
   border-radius: 5px;
-  height: 397px;
-  width: 285px;
+  height: 150px;
+  width: 185px;
   color: #000;
   background-color: #ffffff;
   
 }
 #settingTittle{
   text-align: center;
-  margin-right: 90px;
+  margin-right: 10px;
 }
 #options{
   display: flex;
