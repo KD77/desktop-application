@@ -71,17 +71,6 @@ img {
   background-color: white;
 }
 
-.aplyButton {
-  background-color: #e7e7e7;
-  left: 60px;
-  position: absolute;
-}
-
-.memGameIcon {
-  position: absolute;
-  left: 200px;
-  top: 50px;
-}
 
 .memGamTxt {
   position: absolute;
@@ -242,7 +231,7 @@ button {
   height: 21px;
   background-color: #ffffff;
 }
-.msg {
+#msg {
   position: absolute;
   top: 50%;
   left: 50%;

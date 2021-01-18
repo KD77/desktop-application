@@ -42,33 +42,15 @@ apply.addEventListener('click', function () {
   const select = document.querySelector('#select')
   if (select.value === '2x2') {
     const myWindow = new DragAndDrop('.windowContainer')
-    const myMemory = new MemoryGame(
-      2,
-      2,
-      'memoryContainer',
-      myWindow,
-      memoryWindID
-    )
+    const myMemory = new MemoryGame(2, 2, 'memoryContainer', myWindow, memoryWindID)
     myWindow.div.appendChild(myMemory.div)
   } else if (select.value === '2x4') {
     const myWindow = new DragAndDrop('.windowContainer')
-    const myMemory = new MemoryGame(
-      2,
-      4,
-      'memoryContainer',
-      myWindow,
-      memoryWindID
-    )
+    const myMemory = new MemoryGame(2, 4, 'memoryContainer', myWindow, memoryWindID)
     myWindow.div.appendChild(myMemory.div)
   } else if (select.value === '4x4') {
     const myWindow = new DragAndDrop('.windowContainer')
-    const myMemory = new MemoryGame(
-      4,
-      4,
-      'memoryContainer',
-      myWindow,
-      memoryWindID
-    )
+    const myMemory = new MemoryGame(4, 4, 'memoryContainer', myWindow, memoryWindID)
     myWindow.div.appendChild(myMemory.div)
   }
 })

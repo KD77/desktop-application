@@ -65,7 +65,7 @@ class MemoryGame {
           if (card === lastCard) {
             match += 1
             if (match === (x * y) / 2) {
-              div.textContent = 'Total Tries' + counter
+              div.textContent = 'You Win!'
             }
             window.setTimeout(function () {
               card1 = null
