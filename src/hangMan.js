@@ -58,8 +58,6 @@ export default class HangMan {
 
     const pRp = document.createElement('p')
     pRp.style.color = '#000'
-    pRp.style.fontSize = 'large'
-    pRp.style.fontWeight = 'bold'
     const ptxts = document.createTextNode(this.underScore())
 
     // if the user typed a char and pressed enter go to checkChar() to check that char
@@ -102,8 +100,7 @@ export default class HangMan {
           el.remove()
 
           const pRp = document.createElement('p')
-          pRp.style.color = 'gold'
-          pRp.style.fontSize = 'x-large'
+          pRp.style.fontSize = 'large'
           pRp.className = 'winMessage'
           pRp.style.fontWeight = 'bold'
           const ptxts = document.createTextNode('WON!')
