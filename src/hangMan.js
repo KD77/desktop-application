@@ -1,13 +1,14 @@
 export default class HangMan {
   /**
-   * 
-   * @param {*} container  
-   * @param {class} myWindow  the window  
-   * @param {Intiger} id  each window has a unique id 
+   *
+   * @param {*} container
+   * @param {class} myWindow  the window
+   * @param {Intiger} id  each window has a unique id
    */
   constructor (container, myWindow, id) {
     // Array of the secret words
-    const fruits = ['Apple',
+    const fruits = [
+      'Apple',
       'Orange',
       'Plum',
       'Bananas',
@@ -31,7 +32,9 @@ export default class HangMan {
     ]
     // declare & initialize variables
     this.container = document.querySelector(container)
-    this.hangMan = document.querySelectorAll('.hangManContainer template')[0].content.firstElementChild
+    this.hangMan = document.querySelectorAll(
+      '.hangManContainer template'
+    )[0].content.firstElementChild
     this.div = document.importNode(this.hangMan, true)
     this.container.appendChild(this.div)
 
@@ -44,12 +47,12 @@ export default class HangMan {
     this.answer = this.div.childNodes[5]
     // tittle and window ID
     const divRepresentWindow = document.createElement('div')
-    divRepresentWindow.textContent = 'HangMan'+' ' + id
+    divRepresentWindow.textContent = 'HangMan' + ' ' + id
     divRepresentWindow.className = 'representWindow'
-    divRepresentWindow.style.textAlign= 'center'
+    divRepresentWindow.style.textAlign = 'center'
     myWindow.div.firstElementChild.appendChild(divRepresentWindow)
 
-    // randow words 
+    // randow words
     var word = fruits[Math.floor(Math.random() * 17)]
     this.choosenWord = word.toLowerCase()
 
@@ -61,14 +64,13 @@ export default class HangMan {
 
     // if the user typed a char and pressed enter go to checkChar() to check that char
     this.answer.addEventListener('keypress', (event) => {
-     document.getElementById('msg').style.display='none'
+      document.getElementById('msg').style.display = 'none'
       if (event.keyCode === 13) {
         this.checkChar(myWindow, event.target.value)
         event.preventDefault()
       }
     })
   }
-
 
   underScore () {
     for (var i = 0; i < this.choosenWord.length; i++) {
@@ -104,13 +106,11 @@ export default class HangMan {
           pRp.style.fontSize = 'x-large'
           pRp.className = 'winMessage'
           pRp.style.fontWeight = 'bold'
-          const ptxts = document.createTextNode(
-            'WON!'
-          )
+          const ptxts = document.createTextNode('WON!')
           pRp.appendChild(ptxts)
           myWindow.div.appendChild(pRp)
         }
-      } 
+      }
     }
 
     // display characters

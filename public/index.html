@@ -3,57 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css" />
     <title>Document</title>
   </head>
   <body>
-    
-    
     <div class="nav">
-
-    
-    <div class="memoryIcon icon" id="memIcon">
-      <img src="./img/Geometric lion2.png" alt="memoryIcon" >
-      <h5>Memory Game</h5>
+      <div class="memoryIcon icon" id="memIcon">
+        <img src="./img/Geometric lion2.png" alt="memoryIcon" />
+        <h5>Memory Game</h5>
+      </div>
+      <div class="chatAppIcon icon" id="chatIcon">
+        <img src="./img/Geometric lion3.png" alt="chatAppIcon" />
+        <h5>Chat App</h5>
+      </div>
+      <div class="hangManIcon icon" id="hngmanGame">
+        <img src="./img/hang.png" alt="" />
+        <h5>Hangman</h5>
+      </div>
+      <div id="setting" class="icon">
+        <img src="./img/setting.png" alt="" />
+        <h5>Setting</h5>
+      </div>
     </div>
-    <div class="chatAppIcon icon" id="chatIcon">
-      <img src="./img/Geometric lion3.png" alt="chatAppIcon" >
-      <h5>Chat App</h5>
-    </div>
-   <div class="hangManIcon icon" id="hngmanGame">
-      <img src="./img/hang.png" alt="">
-      <h5>Hangman</h5>
-    </div>
-    <div id="setting" class="icon">
-      <img src="./img/setting.png"  alt="">
-      <h5> Setting</h5>
-    </div>
-
-      
-  </div>
-   
-    
 
     <div id="settingContainer">
-     
-          <div id="closeBtn">
-            <button id="close">X</button>
-          </div>
-       
-      
-        <h4 id="settingTittle">Setting</h4>
-      
-          
-            <div id="options">
-             <select name="dimention"  id="select">
-        <option value="">options</option>
-      <option value="2x2">2 x 2</option>
-      <option value="2x4">2 x 4</option>
-      <option value="4x4">4 x 4</option>
-    </select>
-    
-     <button id="apply"> Apply</button>
-    </div>
+      <div id="closeBtn">
+        <button id="close">X</button>
+      </div>
+
+      <h4 id="settingTittle">Setting</h4>
+
+      <div id="options">
+        <select name="dimention" id="select">
+          <option value="">options</option>
+          <option value="2x2">2 x 2</option>
+          <option value="2x4">2 x 4</option>
+          <option value="4x4">4 x 4</option>
+        </select>
+
+        <button id="apply">Apply</button>
+      </div>
     </div>
 
     <div class="windowContainer">
@@ -61,62 +50,52 @@
         <div class="window">
           <div class="nav-wrapper">
             <div class="icons-wrapper">
-              <div id="dot-1" class="browser-dot"> <h6 id="closeWindow">X</h6>
-                </div>
+              <div id="dot-1" class="browser-dot">
+                <h6 id="closeWindow">X</h6>
+              </div>
               <div id="dot-2" class="browser-dot"></div>
               <div id="dot-3" class="browser-dot"></div>
             </div>
-          
-            
           </div>
-       </div>
+        </div>
       </template>
     </div>
-  
 
     <div class="hangManContainer">
       <template>
         <div class="hMan">
-          <div class="hManArea"><h5 id="msg">Press Enter in the Textbox to Start</h5></div>
-           
-          <div class="hManAreaBorder"></div> 
-          
+          <div class="hManArea">
+            <h5 id="msg">Press Enter in the Textbox to Start</h5>
+          </div>
+
+          <div class="hManAreaBorder"></div>
+
           <div class="text">
             <textarea id="textArea"></textarea>
           </div>
         </div>
       </template>
-
     </div>
     <div class="chatContainer">
       <template>
         <div class="chat">
-          <div class="messages">
-          
-        </div>
-        <div class="name">
-
-        </div>
-        <div class="text">
+          <div class="messages"></div>
+          <div class="name"></div>
+          <div class="text">
             <textarea class="send" id="textArea"></textarea>
-        </div>
+          </div>
         </div>
       </template>
     </div>
 
-    
     <div id="memoryContainer">
       <template>
         <div class="memory">
-                <img src="img/mem/js.png" id="img" alt="memoryImg"/>		
+          <img src="img/mem/js.png" id="img" alt="memoryImg" />
         </div>
-    </template>
+      </template>
     </div>
- 
-   
 
- 
-    
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <script type="module" src="/_dist_/index.js"></script>
   </body>

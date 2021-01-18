@@ -1,14 +1,12 @@
 * {
   box-sizing: border-box;
   margin: 0;
- 
 }
-body{
+body {
   height: 100%;
   width: 100%;
   background: url("./img/windowsWallpaper.png") no-repeat fixed;
   background-size: 100%95%;
-  
 }
 table td {
   outline: 1px solid black;
@@ -30,15 +28,13 @@ img {
   width: 35px;
   margin: 2px 2px;
 }
-#img{
+#img {
   height: 65px;
   width: 65px;
   margin: 5px 2px;
 }
 
-
 .main {
-
   height: 1020px;
 }
 
@@ -66,13 +62,10 @@ img {
 }
 
 .representWindowMemory {
-  color:#000;
-  
-  margin-top: 5px;
-  
-  
-}
+  color: #000;
 
+  margin-top: 5px;
+}
 
 .dimension {
   background-color: white;
@@ -126,9 +119,8 @@ img {
 
 a {
   text-decoration: none;
-  
 }
-#close{
+#close {
   color: #000;
   text-align: center;
 }
@@ -140,8 +132,6 @@ a {
 button {
   cursor: pointer;
 }
-
-
 
 .memory img {
   width: 60px;
@@ -168,12 +158,12 @@ button {
 .text {
   bottom: -4px;
   position: absolute;
-  
+
   width: 384px;
 }
 
 textarea {
-width: 280px;
+  width: 280px;
   height: 40px;
 }
 /*remove*/
@@ -191,7 +181,6 @@ width: 280px;
   border: none;
   border-radius: 25px;
 }
-
 
 .container::after {
   content: "";
@@ -243,21 +232,21 @@ button {
 }
 
 .representWindow {
-  color:#000;
-  
+  color: #000;
+
   margin-top: 10px;
   text-align: center;
 }
 
 .hManAreaBorder {
   height: 21px;
- background-color: #ffffff;
+  background-color: #ffffff;
 }
-#msg{
+#msg {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .icons-wrapper {
@@ -274,13 +263,12 @@ button {
   background-color: #d2d2d2;
   border-radius: 5px 5px 0 0;
 }
- #close {
+#close {
   text-align: center;
 }
 #dot-1 {
   display: inline;
   background-color: #fc6058;
-  
 }
 
 #dot-2 {
@@ -301,11 +289,10 @@ button {
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 }
-p{
+p {
   color: #ffffff;
 }
 #settingContainer {
- 
   display: block;
   border: 2px solid silver;
   border-radius: 5px;
@@ -313,13 +300,12 @@ p{
   width: 185px;
   color: #000;
   background-color: #ffffff;
-  
 }
-#settingTittle{
+#settingTittle {
   text-align: center;
   margin-right: 10px;
 }
-#options{
+#options {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -327,51 +313,48 @@ p{
   align-items: center;
   margin: 20px;
 }
-#apply{
+#apply {
   padding: 14px 20px;
   color: #000;
-  text-align:center;
+  text-align: center;
   text-decoration: none;
   border: 2px solid #000;
-  margin: 20px; 
+  margin: 20px;
   background-color: #fff;
-
 }
-.changeNameButton{
+.changeNameButton {
   padding: 5px 10px;
   color: #000;
-  text-align:center;
+  text-align: center;
   text-decoration: none;
-  
-  margin: 10px; 
-  background-color: #fff;
 
+  margin: 10px;
+  background-color: #fff;
 }
 .UserNameTextBox {
   height: 30px;
   width: 50px;
   transition: all 0.6s;
-  box-shadow:none;
+  box-shadow: none;
 }
-.buttonOk{
+.buttonOk {
   height: 30px;
-  background: #85BD02;
+  background: #85bd02;
   border: 0;
   padding: 5px 10px;
   border-radius: 5px;
   color: white;
   transition: all 0.6s;
 }
-.name{
+.name {
   height: 22px;
-  
 }
 .messages {
   height: 260px;
   overflow-x: hidden;
   overflow-y: auto;
 }
-#closeWindow{
+#closeWindow {
   cursor: pointer;
   text-align: center;
 }

@@ -1,15 +1,17 @@
 class MemoryGame {
   /**
-   * 
+   *
    * @param {Intiger} x row of the cards
    * @param {Intiger} y  column of the card
-   * @param {*} container 
-   * @param {*} myWindow the window      
-   * @param {Intiger} id  each window has a unique id 
+   * @param {*} container
+   * @param {*} myWindow the window
+   * @param {Intiger} id  each window has a unique id
    */
   constructor (x, y, container, myWindow, id) {
     this.container = document.getElementById(container)
-    this.memoryDiv = document.querySelectorAll('#memoryContainer template')[0].content.firstElementChild
+    this.memoryDiv = document.querySelectorAll(
+      '#memoryContainer template'
+    )[0].content.firstElementChild
     this.div = document.importNode(this.memoryDiv, false)
     this.tiles = this.shuffleCards(x, y)
     // create new game
@@ -17,7 +19,7 @@ class MemoryGame {
     this.container.appendChild(this.div)
     // tittle and window ID
     const divRepresentWindow = document.createElement('div')
-    divRepresentWindow.textContent = 'MemoryGame'+' ' + id
+    divRepresentWindow.textContent = 'MemoryGame' + ' ' + id
     divRepresentWindow.className = 'representWindowMemory'
     myWindow.div.firstElementChild.appendChild(divRepresentWindow)
   }
@@ -34,15 +36,18 @@ class MemoryGame {
       div.appendChild(a)
       // If the user pressed on a card then show this card
       a.addEventListener('click', function (event) {
-        const img = event.target.nodeName === 'IMG' ? event.target : event.target.firstElementChild
+        const img =
+          event.target.nodeName === 'IMG'
+            ? event.target
+            : event.target.firstElementChild
         displayCard(card, index, img)
       })
-/**
- * 
- * @param {} card 
- * @param {Intiger} index 
- * @param {*} img 
- */
+      /**
+       *
+       * @param {} card
+       * @param {Intiger} index
+       * @param {*} img
+       */
       function displayCard (card, index, img) {
         if (card2) {
           return
@@ -87,8 +92,9 @@ class MemoryGame {
   /**
    * shuffleCards based on columns and rows.
    * x and y are the positions
-   * @param {double} x 
-   * @param {double} y 
+   *
+   * @param {double} x
+   * @param {double} y
    */
   shuffleCards (x, y) {
     const array = []

@@ -1,14 +1,16 @@
 class Chat {
-    /**
-   * 
-   * @param {*} container  
-   * @param {class} myWindow  the window  
-   * @param {Intiger} id  each window has a unique id 
+  /**
+   *
+   * @param {*} container
+   * @param {class} myWindow  the window
+   * @param {Intiger} id  each window has a unique id
    */
   constructor (container, myWindow, id) {
     // declare & initialize variables
     this.container = document.querySelector(container)
-    this.chatDiv = document.querySelectorAll('.chatContainer template')[0].content.firstElementChild
+    this.chatDiv = document.querySelectorAll(
+      '.chatContainer template'
+    )[0].content.firstElementChild
     this.div = document.importNode(this.chatDiv, true)
     this.container.appendChild(this.div)
 
@@ -21,7 +23,7 @@ class Chat {
     this.textAreaDiv = this.div.childNodes[5]
 
     const divRepresentWindow = document.createElement('div')
-    divRepresentWindow.textContent = 'Chat'+' '+ id
+    divRepresentWindow.textContent = 'Chat' + ' ' + id
     divRepresentWindow.className = 'representWindow'
     myWindow.div.firstElementChild.appendChild(divRepresentWindow)
 
@@ -47,7 +49,6 @@ class Chat {
           data: event.target.value,
           username: this.myName,
           key: 'eDBE76deU7L0H9mEBgxUKVR0VCnq0XBd'
-
         }
         this.sendJsonMessage = JSON.stringify(this.messageJsToServer)
         this.socket.send(this.sendJsonMessage)
@@ -62,7 +63,8 @@ class Chat {
     this.message = JSON.parse(this.message)
     this.strangerUserName = this.message.username
     this.data = this.message.data
-    this.messageDiv.innerHTML = this.strangerUserName + ':' + '<br>' + this.data
+    this.messageDiv.innerHTML =
+      this.strangerUserName + ':' + '<br>' + this.data
     this.messageDiv.className = 'container'
     this.showMessageDiv.appendChild(this.messageDiv)
   }
