@@ -6,8 +6,8 @@
 body{
   height: 100%;
   width: 100%;
-  background: url("./img/walpaper.jpg") no-repeat fixed;
-  background-size: 100%93%;
+  background: url("./img/windowsWallpaper.png") no-repeat fixed;
+  background-size: 100%95%;
   
 }
 table td {
@@ -28,7 +28,7 @@ table td:hover {
 img {
   height: 35px;
   width: 35px;
-  margin: 5px 2px;
+  margin: 2px 2px;
 }
 #img{
   height: 65px;
