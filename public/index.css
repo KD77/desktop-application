@@ -371,5 +371,9 @@ p{
   overflow-x: hidden;
   overflow-y: auto;
 }
+#closeWindow{
+  cursor: pointer;
+  text-align: center;
+}
 
 /*.....*/
