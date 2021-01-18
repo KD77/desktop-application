@@ -1,4 +1,10 @@
 export default class HangMan {
+  /**
+   * 
+   * @param {*} container  
+   * @param {class} myWindow  the window  
+   * @param {Intiger} id  each window has a unique id 
+   */
   constructor (container, myWindow, id) {
     // Array of the secret words
     const fruits = ['Apple',

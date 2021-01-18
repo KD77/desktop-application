@@ -1,4 +1,10 @@
 class Chat {
+    /**
+   * 
+   * @param {*} container  
+   * @param {class} myWindow  the window  
+   * @param {Intiger} id  each window has a unique id 
+   */
   constructor (container, myWindow, id) {
     // declare & initialize variables
     this.container = document.querySelector(container)

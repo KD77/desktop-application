@@ -1,4 +1,12 @@
 class MemoryGame {
+  /**
+   * 
+   * @param {Intiger} x row of the cards
+   * @param {Intiger} y  column of the card
+   * @param {*} container 
+   * @param {*} myWindow the window      
+   * @param {Intiger} id  each window has a unique id 
+   */
   constructor (x, y, container, myWindow, id) {
     this.container = document.getElementById(container)
     this.memoryDiv = document.querySelectorAll('#memoryContainer template')[0].content.firstElementChild
@@ -29,7 +37,12 @@ class MemoryGame {
         const img = event.target.nodeName === 'IMG' ? event.target : event.target.firstElementChild
         displayCard(card, index, img)
       })
-
+/**
+ * 
+ * @param {} card 
+ * @param {Intiger} index 
+ * @param {*} img 
+ */
       function displayCard (card, index, img) {
         if (card2) {
           return
@@ -64,14 +77,19 @@ class MemoryGame {
         }
       }
 
-      // Important to display 2x2, otherwise it will print 1x4
+      // display 2x2, otherwise it will print 1x4
       if ((index + 1) % y === 0) {
         div.appendChild(document.createElement('br'))
       }
     })
   }
 
-  // shuffleCards based on columns and rows
+  /**
+   * shuffleCards based on columns and rows.
+   * x and y are the positions
+   * @param {double} x 
+   * @param {double} y 
+   */
   shuffleCards (x, y) {
     const array = []
     for (var i = 1; i <= (x * y) / 2; i++) {
