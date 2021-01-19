@@ -9,26 +9,8 @@ export default class HangMan {
     // Array of the secret words
     const fruits = [
       'Apple',
-      'Orange',
-      'Plum',
-      'Bananas',
-      'Pears',
-      'Avocado',
-      'Blackberries',
-      'Apricots',
-      'Cantaloupe',
-      'Cherries',
-      'Grapes',
-      'Grapes',
-      'Mandarin',
-      'Mango',
-      'Papaya',
-      'Peaches',
-      'Pineapple',
-      'Raspberries',
-      'Strawberries',
-      'Watermelon',
-      'Blueberries'
+      'Orange'
+      
     ]
     // declare & initialize variables
     this.container = document.querySelector(container)
@@ -52,8 +34,9 @@ export default class HangMan {
     divRepresentWindow.style.textAlign = 'center'
     myWindow.div.firstElementChild.appendChild(divRepresentWindow)
 
+    
     // randow words
-    var word = fruits[Math.floor(Math.random() * 17)]
+    var word = fruits[Math.floor(Math.random() * fruits.length)]
     this.choosenWord = word.toLowerCase()
 
     const pRp = document.createElement('p')
