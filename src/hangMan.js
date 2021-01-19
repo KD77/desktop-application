@@ -28,7 +28,7 @@ export default class HangMan {
       'Raspberries',
       'Strawberries',
       'Watermelon',
-      'Blueberries,
+      'Blueberries',
 
       
     ]
