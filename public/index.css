@@ -2,12 +2,14 @@
   box-sizing: border-box;
   margin: 0;
 }
+
 body {
   height: 100%;
   width: 100%;
   background: url("./img/windowsWallpaper.png") no-repeat fixed;
   background-size: 100%95%;
 }
+
 table td {
   outline: 1px solid black;
   width: 300px;
@@ -26,8 +28,9 @@ table td:hover {
 img {
   height: 35px;
   width: 35px;
-  margin: 2px 2px;
+  margin: 2px;
 }
+
 #img {
   height: 65px;
   width: 65px;
@@ -40,7 +43,6 @@ img {
 
 .nav {
   overflow: hidden;
-
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -53,9 +55,10 @@ img {
   background-color: #2c3e50;
   text-align: center;
 }
+
 .icon {
   margin: 5px 20px;
-  color: #ffffff;
+  color: #fff;
   border: 1px solid greenyellow;
   border-radius: 6px;
   padding: 5px;
@@ -63,14 +66,12 @@ img {
 
 .representWindowMemory {
   color: #000;
-
   margin-top: 5px;
 }
 
 .dimension {
   background-color: white;
 }
-
 
 .memGamTxt {
   position: absolute;
@@ -109,10 +110,12 @@ img {
 a {
   text-decoration: none;
 }
+
 #close {
   color: #000;
   text-align: center;
 }
+
 .border {
   height: 21px;
   background-color: #4c75a7;
@@ -129,7 +132,7 @@ button {
 .memory .removed {
   visibility: hidden;
 }
-/*duplicate*/
+
 .window {
   border: 2px solid silver;
   border-radius: 5px;
@@ -140,26 +143,19 @@ button {
   position: fixed;
   left: 500px;
   top: 150px;
-  background-color: #ffffff;
+  background-color: #fff;
   color: #000;
 }
 
 .text {
   bottom: -4px;
   position: absolute;
-
   width: 384px;
 }
 
 textarea {
   width: 280px;
   height: 40px;
-}
-/*remove*/
-.navWindow {
-  height: 38px;
-  border: 2px solid #4c75a7;
-  background-color: #4c75a7;
 }
 
 .buttonX {
@@ -179,7 +175,7 @@ textarea {
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
 }
 
 .game {
@@ -222,21 +218,20 @@ button {
 
 .representWindow {
   color: #000;
-
   margin-top: 10px;
   text-align: center;
 }
 
 .hManAreaBorder {
   height: 21px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
+
 #msg {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 .icons-wrapper {
@@ -244,6 +239,7 @@ button {
   justify-content: space-between;
   padding: 5px;
 }
+
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
@@ -253,9 +249,11 @@ button {
   background-color: #d2d2d2;
   border-radius: 5px 5px 0 0;
 }
+
 #close {
   text-align: center;
 }
+
 #dot-1 {
   display: inline;
   background-color: #fc6058;
@@ -268,20 +266,22 @@ button {
 #dot-3 {
   background-color: #2aca3e;
 }
+
 .browser-dot {
   background-color: black;
   height: 15px;
   width: 15px;
   border-radius: 50%;
   margin: 5px;
-
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 }
+
 p {
-  color: #ffffff;
+  color: #fff;
 }
+
 #settingContainer {
   display: block;
   border: 2px solid silver;
@@ -289,12 +289,14 @@ p {
   height: 150px;
   width: 185px;
   color: #000;
-  background-color: #ffffff;
+  background-color: #fff;
 }
+
 #settingTittle {
   text-align: center;
   margin-right: 10px;
 }
+
 #options {
   display: flex;
   flex-direction: column;
@@ -303,6 +305,7 @@ p {
   align-items: center;
   margin: 20px;
 }
+
 #apply {
   padding: 14px 20px;
   color: #000;
@@ -312,21 +315,23 @@ p {
   margin: 20px;
   background-color: #fff;
 }
+
 .changeNameButton {
   padding: 5px 10px;
   color: #000;
   text-align: center;
   text-decoration: none;
-
   margin: 10px;
   background-color: #fff;
 }
+
 .UserNameTextBox {
   height: 30px;
   width: 50px;
   transition: all 0.6s;
   box-shadow: none;
 }
+
 .buttonOk {
   height: 30px;
   background: #85bd02;
@@ -336,17 +341,19 @@ p {
   color: white;
   transition: all 0.6s;
 }
+
 .name {
   height: 22px;
 }
+
 .messages {
   height: 260px;
   overflow-x: hidden;
   overflow-y: auto;
 }
+
 #closeWindow {
   cursor: pointer;
   text-align: center;
 }
 
-/*.....*/

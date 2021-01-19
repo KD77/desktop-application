@@ -1,10 +1,12 @@
 class Chat {
   /**
+   *the constraction chat takes the window html tag, drag and drop class and a uniqe id.
    *
    * @param {*} container
    * @param {class} myWindow  the window
    * @param {Intiger} id  each window has a unique id
    */
+
   constructor (container, myWindow, id) {
     // declare & initialize variables
     this.container = document.querySelector(container)

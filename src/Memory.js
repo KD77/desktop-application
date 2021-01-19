@@ -1,12 +1,14 @@
 class MemoryGame {
   /**
+   *the constraction takes the position of x-axis, y-axis, the window html tag, drag and drop class and a uniqe id
    *
-   * @param {Intiger} x row of the cards
-   * @param {Intiger} y  column of the card
+   * @param {int} x row of the cards
+   * @param {int} y  column of the card
    * @param {*} container
    * @param {*} myWindow the window
-   * @param {Intiger} id  each window has a unique id
+   * @param {int} id  each window has a unique id
    */
+
   constructor (x, y, container, myWindow, id) {
     this.container = document.getElementById(container)
     this.memoryDiv = document.querySelectorAll(
@@ -43,6 +45,7 @@ class MemoryGame {
         displayCard(card, index, img)
       })
       /**
+       * this method shows the cards.
        *
        * @param {} card
        * @param {Intiger} index
